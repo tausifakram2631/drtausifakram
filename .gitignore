@@ -1,0 +1,9 @@
+# Node module
+node_modules/
+
+# Environment files
+.env
+
+# Other sensitive configuration files
+*.local
+*.log
