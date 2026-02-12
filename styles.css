@@ -1,65 +1,75 @@
-/**
- * Basic Reset
- */
-* {
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.research-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.education-item {
+    list-style-type: none;
+    padding: 8px;
+}
+
+.publications-list {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* light background for readability */
-    color: #333; /* dark text for contrast */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
 }
 
-/* Header */
-header {
-    background-color: #007BFF; /* medical blue color */
-    color: white;
-    padding: 20px;
-    text-align: center;
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
+.contact-form {
+    display: flex;
+    flex-direction: column;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
-
-/* Footer */
-footer {
-    background-color: #007BFF; /* medical blue */
-    color: white;
-    text-align: center;
+.contact-form input, .contact-form textarea {
+    margin: 8px 0;
     padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-/* Optimize images for fast loading */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+@media (max-width: 600px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
 }
