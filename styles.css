@@ -1,0 +1,65 @@
+/**
+ * Basic Reset
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* light background for readability */
+    color: #333; /* dark text for contrast */
+}
+
+/* Header */
+header {
+    background-color: #007BFF; /* medical blue color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #007BFF; /* medical blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Optimize images for fast loading */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
